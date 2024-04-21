@@ -22,7 +22,7 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <maven.compiler.release>${maven.compiler.source}</maven.compiler.release>
 
@@ -117,7 +117,6 @@
                     <version>${version.plugin.compiler}</version>
                     <configuration>
                         <compilerArgs>
-                            <compilerArg>--enable-preview</compilerArg>
                         </compilerArgs>
                     </configuration>
                 </plugin>
@@ -127,7 +126,6 @@
                     <version>${version.plugin.surefire}</version>
                     <configuration>
                         <useModulePath>false</useModulePath>
-                        <argLine>--enable-preview</argLine>
                         <trimStackTrace>false</trimStackTrace>
                     </configuration>
                 </plugin>
@@ -138,7 +136,6 @@
                     <configuration>
                         <useModulePath>false</useModulePath>
                         <redirectTestOutputToFile>true</redirectTestOutputToFile>
-                        <argLine>--enable-preview</argLine>
                     </configuration>
                 </plugin>
                 <plugin>
